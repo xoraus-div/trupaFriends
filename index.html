@@ -153,7 +153,7 @@
             </div>
 
             <div class="video-wrap">
-                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                <video id="BgVideo" muted autoplay loop class="custom-video" poster="">
                     <source src="video/AQPACIBRmu-QwOMrYy5Uy_C7JHos9xKUdmDYU2AXz9nC0pPQ3yAAAUtWJV5-VcHXpDmkpW1aTVhNjnARoPHAnCpMkea_AzGbee6WE-o.mp4" type="video/mp4">
 
                     Your browser does not support the video tag.
@@ -722,7 +722,11 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/click-scroll.js"></script>
     <script src="js/custom.js"></script>
-
+    <script>
+        var bgvideo = document.getElementById("BgVideo");
+        bgvideo.muted = true;
+        bgvideo.play();
+    </script>
 </body>
 
 </html>
